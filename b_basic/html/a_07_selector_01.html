@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--a_07_selector_01.html-->
+<html lang="ko-KR">
+<head>
+  <meta charset="UTF-8">
+  <title>웹기초
+  </title>
+  <style>
+    body {background-color:#b9f8f0}
+    h1 {background-color: #e6cefc;color: darkcyan;}/*폰트컬러는 컬러라고 칭한다*/
+    #base_seloctor {
+      border-width: 2px;
+      border-style: solid;
+      border-color: black;
+    }
+    h2.select_title {background-color: #af9c83;color:antiquewhite}
+    P.select_title {color:rgb(255, 0, 242); }/*h2와 다르게 한줄로 테그 접합가능*/
+    P {color:rgb(3, 114, 71); }
+    
+    #more_seloctor {
+      border-width: 2px;
+      border-style: dotted;
+      border-color:#9839f1;
+    }
+  </style>
+</head>
+<body>
+  <h1>웹문서</h1>
+  <div id="base_seloctor"><!--div태그에서 스타일을 더하고 싶다면 div id로 변경  -->
+  <h2 class="select_title">css 선택자</h2><!--h2태그 중복사용은 가능하나 div로 구분하여 준다-->
+  <p class="select_title">내용을 작성</p><!--p태그 추가적용및 셀렉트 타이틀 적용 가능-->
+</div>
+  <div id="more_selector">
+  <h2 class="select_title">css 선택자</h2><!--h2태그 중복사용은 가능하나 div로 구분하여 준다-->
+  <p>다양한 선택자를 추가</p>
+</div>
+</body>
+</html>
