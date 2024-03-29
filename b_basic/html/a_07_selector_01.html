@@ -7,7 +7,7 @@
   <style>
     body {background-color:#b9f8f0}
     h1 {background-color: #e6cefc;color: darkcyan;}/*폰트컬러는 컬러라고 칭한다*/
-    #base_seloctor {
+    #baseSeloctor {
       border-width: 2px;
       border-style: solid;
       border-color: black;
@@ -15,23 +15,38 @@
     h2.select_title {background-color: #af9c83;color:antiquewhite}
     P.select_title {color:rgb(255, 0, 242); }/*h2와 다르게 한줄로 테그 접합가능*/
     P {color:rgb(3, 114, 71); }
+
+    #makeBox {width:400px; height:100px; }
+    .one_box {background-color:#e6cefc; }
+
+    /*
+    id의 이름을 작성할 경우 
+    : 카멜케이스형식(뒤에오는단어 첫글자 대문자)-> view box -> view Box
+    class의 이름을 작성할 경우
+    : 언더바 형식(뒤에오는 단어를 구분하기 위해 _를 사용)-> wiew_box
+
+
+    */
     
-    #more_seloctor {
+    #moreSeloctor {
       border-width: 2px;
-      border-style: dotted;
+      border-style: solid;
       border-color:#9839f1;
     }
   </style>
 </head>
 <body>
   <h1>웹문서</h1>
-  <div id="base_seloctor"><!--div태그에서 스타일을 더하고 싶다면 div를 id로 변경  -->
+  <div id="baseSeloctor"><!--div태그에서 스타일을 더하고 싶다면 div를 id로 변경  -->
   <h2 class="select_title">css 선택자</h2><!--h2태그 중복사용은 가능하나 div로 구분하여 준다-->
   <p class="select_title">내용을 작성</p><!--p태그 추가적용및 셀렉트 타이틀 적용 가능-->
+  <div id="makeBox" class="one_box">하나의 박스를 생성</div>
 </div>
-  <div id="more_selector">
-  <h2 class="select_title">css 선택자</h2><!--h2태그 중복사용은 가능하나 div로 구분하여 준다-->
+
+  <div id="moreSelector">
+  <h2 class="select_title">선택자</h2><!--h2태그 중복사용은 가능하나 div로 구분하여 준다-->
   <p>다양한 선택자를 추가</p>
 </div>
+
 </body>
 </html>
